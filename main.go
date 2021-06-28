@@ -1,7 +1,7 @@
 package main
 
 import (
-	"design-patterns-go/observerPattern"
+	"design-patterns-go/decoratorPattern"
 	"fmt"
 )
 
@@ -16,6 +16,9 @@ func main() {
 	//strategy := strategyPattern.NewStrategy()
 	//strategy.Run()
 
-	observer := observerPattern.NewObserver()
-	observer.Run()
+	//observer := observerPattern.NewObserver()
+	//observer.Run()
+
+	decorator := decoratorPattern.NewDecorator()
+	decorator.Run()
 }
