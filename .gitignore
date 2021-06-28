@@ -1,2 +1,5 @@
 .idea
 design-patterns-go
+strategy_pattern
+observer_pattern
+decorator_pattern
