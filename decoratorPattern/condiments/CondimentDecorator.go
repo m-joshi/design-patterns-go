@@ -1,6 +1,6 @@
 package condiments
 
 type CondimentDecorator interface {
-	GetDescription() string
-	Cost() int
+	GetDescription(func() string) func() string
+	Cost(func() int) func() int
 }
