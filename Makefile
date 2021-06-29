@@ -14,3 +14,6 @@ run_observer:
 
 run_decorator:
 	./decorator_pattern
+
+clean:
+	$(GOCLEAN)
