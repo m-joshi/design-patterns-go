@@ -1,6 +1,8 @@
 GOCMD=go
     GOBUILD=$(GOCMD) build
+    GORUN=$(GOCMD) run
     GOCLEAN=$(GOCMD) clean
+
     BINARY_NAME= "decorator_pattern"
 
 build:
@@ -14,6 +16,9 @@ run_observer:
 
 run_decorator:
 	./decorator_pattern
+
+run_scatter_gather:
+	$(GORUN) scatterGatherPattern/main/main.go
 
 clean:
 	$(GOCLEAN)
