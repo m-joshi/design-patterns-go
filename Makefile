@@ -1,21 +1,15 @@
 GOCMD=go
-    GOBUILD=$(GOCMD) build
     GORUN=$(GOCMD) run
     GOCLEAN=$(GOCMD) clean
 
-    BINARY_NAME= "decorator_pattern"
-
-build:
-	$(GOBUILD) -o $(BINARY_NAME) -v
-
 run_strategy:
-	./strategy_pattern
+	$(GORUN) strategyPattern/main/main.go
 
 run_observer:
-	./observer_pattern
+	$(GORUN) observerPattern/main/main.go
 
 run_decorator:
-	./decorator_pattern
+	$(GORUN) decoratorPattern/main/main.go
 
 run_scatter_gather:
 	$(GORUN) scatterGatherPattern/main/main.go
